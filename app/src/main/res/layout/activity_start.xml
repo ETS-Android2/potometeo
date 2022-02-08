@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:alpha="0.8"
+        android:contentDescription="@string/image_background_description"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backgroundstart"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewChoixVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="96dp"
+        android:contentDescription="@string/question_choix_ville"
+        android:shadowColor="#000000"
+        android:shadowDx="5.5"
+        android:shadowDy="5.3"
+        android:shadowRadius="5.6"
+        android:text="@string/question_choix_ville"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMascotte"
+        android:layout_width="263dp"
+        android:layout_height="299dp"
+        android:contentDescription="@string/image_mascotte"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bleu" />
+
+    <ListView
+        android:id="@+id/listView"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300sp"
+        android:alpha="1"
+        android:background="@drawable/backgroundlist"
+        android:backgroundTint="#33000000"
+        android:backgroundTintMode="src_over"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="true"
+        android:textFilterEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight="match_parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBackground"
+        app:layout_constraintVertical_bias="0.807">
+
+    </ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
